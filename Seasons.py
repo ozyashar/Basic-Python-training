@@ -5,7 +5,7 @@
 # autumn season (9-11)
 
 # Please enter below the month you want to check (1-12)
-season = input('Please enter a month: ')
+season = input('Please enter a month: ') # todo: good code
 if int(season) in (12, 1, 2):
     print("This is winter season")
 elif int(season) in (3, 4, 5):

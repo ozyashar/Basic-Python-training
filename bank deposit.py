@@ -5,8 +5,9 @@ dValue = input('Please enter deposit value: ')
 Percent = input('Please enter percent per year: ')
 # number of years - 3
 # This counter will stop after reaching 3 years.
+# todo: number of years should be user input
 count = 0
-while int(dValue) > 0:
+while int(dValue) > 0: # todo: no need to convert variable dValue to int every time
     dValue = int(dValue) * (1 + (int(Percent)/10))
     count += 1
     if count == 3:
@@ -14,4 +15,4 @@ while int(dValue) > 0:
         break
 
 else:
-    print('Reached to end', dValue)
+    print('Reached to end', dValue) # todo: statement is unreachable
