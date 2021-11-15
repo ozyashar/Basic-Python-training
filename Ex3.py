@@ -30,22 +30,21 @@ x = 0
 lst1 = []
 lst2 = []
 element = []
-TT = []
-while int(x) <= 3:
+final_element = []
+while x <= 3:
     FList = input("enter a number for first list: ")
     lst1.append(FList)
     SList = input("enter a number for second list: ")
     lst2.append(SList)
     x += 1
-    for i in lst1:
-        if i not in lst2:
-            element.append(i)
-            # helps to remove the first index in case ut shows in lst2
-        elif lst1[0] in element:
-            TT = lst1[0]
-            element.remove(lst1[0])
+for i in lst1:
+    if i not in lst2:
+        element.append(i)
+
+        for j in element:
+            if j not in final_element:
+                final_element.append(j)
 
 print("first list: ", lst1)
 print("second list: ", lst2)
-print("element: ", element)
-
+print("final_element: ", final_element)
