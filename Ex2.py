@@ -6,14 +6,16 @@ EvenList = []
 OddList = []
 
 while int(i) < 8:
-    N = input("Enter a number: ")
+    lst = input("Enter a number: ")
 
-    if int(N) % 2 == 0:
-        EvenList.append(N)
+    if int(lst) % 2 == 0:
+        EvenList.append(lst)
     else:
-        OddList.append(N)
+        OddList.append(lst)
 
     i += 1
 
 print("EvenList: ", EvenList)
 print("OddList: ", OddList)
+
+
